@@ -40,7 +40,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>2M Shisha Lounge - Nazaré</title>
+        <title>Nazaré Shisha Lounge</title>
         <meta name="description" content="2M Shisha Lounge" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

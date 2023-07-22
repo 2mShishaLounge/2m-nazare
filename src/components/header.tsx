@@ -52,7 +52,7 @@ const MenuDropdown = () => {
                     <div className="flex h-full flex-col overflow-y-scroll bg-white py-6 shadow-xl dark:bg-black">
                       <div className="flex w-full justify-between px-4 sm:px-6">
                         <div className="flex items-center space-x-3">
-                          <Dialog.Title className="text-2xl font-semibold leading-6 text-gray-900 dark:text-slate-200">2M Shisha Lounge</Dialog.Title>
+                          <Dialog.Title className="text-2xl font-semibold leading-6 text-gray-900 dark:text-slate-200">Nazaré Shisha Lounge</Dialog.Title>
                         </div>
                         <button type="button" className="block rounded-md text-black sm:hidden" onClick={() => setOpen(false)}>
                           <span className="sr-only">Close panel</span>
@@ -67,10 +67,10 @@ const MenuDropdown = () => {
 
                         {/* Information */}
                         <div className="my-8 grid grid-cols-1 font-normal text-black/80 dark:text-slate-200">
-                          <p className="">Rua do Conde Redondo N 137, 1150-294 Lisboa</p>
+                          <p className="">Rua Branco Martins , 19 LJ 2, 2450-172 Nazaré</p>
                           <p className="mt-4 ">Segunda a Domingo</p>
                           <p className="">15:00 pm - 02:00 am</p>
-                          <p className="mt-4">Book a Table | +351 920 378 644</p>
+                          <p className="mt-4">Book a Table | +351 920 575 000</p>
                         </div>
                       </div>
                     </div>

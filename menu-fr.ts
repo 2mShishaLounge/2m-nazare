@@ -511,7 +511,7 @@ export const Tea = [
 export const SnackCategories = [
   { id: 1, name: "Toasts", url: "/snacks/tostas" },
   { id: 2, name: "Hamburgers", url: "/snacks/burgers" },
-  { id: 3, name: "Hot-dog", url: "/snacks/cachorros" },
+  //{ id: 3, name: "Hot-dog", url: "/snacks/cachorros" },
   { id: 4, name: "Apéritif", url: "/snacks/extras" },
 ];
 

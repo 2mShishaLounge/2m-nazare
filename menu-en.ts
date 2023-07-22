@@ -510,7 +510,7 @@ export const Tea = [
 export const SnackCategories = [
   { id: 1, name: "Toasts", url: "/snacks/tostas" },
   { id: 2, name: "Burgers", url: "/snacks/burgers" },
-  { id: 3, name: "Hot Dogs", url: "/snacks/cachorros" },
+  //{ id: 3, name: "Hot Dogs", url: "/snacks/cachorros" },
   { id: 4, name: "Snacks", url: "/snacks/extras" },
 ];
 
