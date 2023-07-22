@@ -26,6 +26,7 @@ export const Header = () => {
 
 const MenuDropdown = () => {
   const [open, setOpen] = useState(false);
+  const { locale: currentLocale } = useRouter();
 
   return (
     <div>
@@ -62,15 +63,33 @@ const MenuDropdown = () => {
                       <div className="relative mt-6 flex-1 px-4 sm:px-6">
                         {/* Socials */}
                         <div className="flex space-x-4">
-                          <SocialIcon url="https://www.instagram.com/2m_shishalounge/" />
+                          <SocialIcon url="https://www.instagram.com/nazare_shisha_lounge/" />
                         </div>
 
                         {/* Information */}
                         <div className="my-8 grid grid-cols-1 font-normal text-black/80 dark:text-slate-200">
                           <p className="">Rua Branco Martins , 19 LJ 2, 2450-172 Nazaré</p>
-                          <p className="mt-4 ">Segunda a Domingo</p>
-                          <p className="">15:00 pm - 02:00 am</p>
-                          <p className="mt-4">Book a Table | +351 920 575 000</p>
+                          <p className="mt-4">
+                            {currentLocale === "en" && "Monday to Sunday"}
+                            {currentLocale === "pt" && "Segunda a Domingo"}
+                            {currentLocale === "es" && "De Lunes a Domingo"}
+                            {currentLocale === "fr" && "Lundi à Dimanche"}
+                          </p>
+
+                          <p className="">{currentLocale === "en" ? "3:00 PM - 01:30 AM" : "15:00 - 01:30"}</p>
+
+                          <p className="mt-4">
+                            {currentLocale === "en" && "Reservar uma mesa"}
+                            {currentLocale === "pt" && "Segunda a Domingo"}
+                            {currentLocale === "es" && "Reservar una mesa"}
+                            {currentLocale === "fr" && "Réserver une table"}
+                            <span className="ml-2">
+                              |{" "}
+                              <a href="tel:+351920575000" className="ml-1">
+                                +351 920 575 000
+                              </a>
+                            </span>
+                          </p>
                         </div>
                       </div>
                     </div>
