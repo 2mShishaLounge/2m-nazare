@@ -354,6 +354,8 @@ export const Batidos = [
   { id: 3, name: "Batido de Morango e Banana", price: "5,00€" },
   { id: 4, name: "Sumo de Laranja", price: "4,00€" },
   { id: 5, name: "Limonada", price: "4,00€" },
+  { id: 6, name: "Batido de Baunilha", price: "5,50€" },
+  { id: 7, name: "Batido de Chocolate", price: "5,50€" },
 ];
 
 export const Shots = [
@@ -562,7 +564,7 @@ export const Burgers = [
   },
   {
     id: 5,
-    name: "2M Burger",
+    name: "Nazare shisha lounge Burger",
     price: "10,00€",
     description: "Carne de Vaca (150g), Queijo, cebola frita, bacon, ovo, alface e tomate, maionese e ketchup, Inclui Batata Frita",
   },
@@ -585,7 +587,7 @@ export const Cachorros = [
 
   {
     id: 3,
-    name: "Cachorro 2M",
+    name: "Cachorro Nazare shisha lounge",
     price: "8,00€",
     description: "Salsicha, batata palha, queijo, bacon, Cebola frita, maionese e ketchup, Inclui Batata Frita",
   },

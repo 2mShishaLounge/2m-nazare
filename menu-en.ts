@@ -354,11 +354,13 @@ export const Batidos = [
   { id: 3, name: "Banana & Strawberry Milk Shake", price: "5,00€" },
   { id: 4, name: "Orange Juice", price: "4,00€" },
   { id: 5, name: "Limonade", price: "4,00€" },
+  { id: 6, name: "Vanilla Milk Shake", price: "5,50€" },
+  { id: 7, name: "Chocolate Milk Shake", price: "5,50€" },
 ];
 
 export const Shots = [
   { id: 1, name: "Shots", price: "2.50€" },
-  { id: 2, name: "Special Shot ", price: "4,00€", description: "Eager bomb, red and gold bomb, 2M bomb" },
+  { id: 2, name: "Special Shot ", price: "4,00€", description: "Eager bomb, red and gold bomb, Nazare shisha lounge bomb" },
 ];
 
 export const Garrafas = [
@@ -561,7 +563,7 @@ export const Burgers = [
   },
   {
     id: 5,
-    name: "2M Burger",
+    name: "Nazare shisha lounge Burger",
     price: "10,00€",
     description: "Beef (150g), Cheese, fried onion, bacon, egg, lettuce and tomato, mayonnaise and ketchup, french fries included",
   },
@@ -584,7 +586,7 @@ export const Cachorros = [
 
   {
     id: 3,
-    name: "HotDog 2M",
+    name: "Nazare shisha lounge HotDog",
     price: "8,00€",
     description: "Chicken sausage, straw potatoes, cheese, bacon, fried onion, mayonnaise and ketchup, french fries included",
   },
