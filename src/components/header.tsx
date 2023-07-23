@@ -76,7 +76,7 @@ const MenuDropdown = () => {
                             {currentLocale === "fr" && "Lundi à Dimanche"}
                           </p>
 
-                          <p className="">{currentLocale === "en" ? "4:00 PM - 01:30 AM" : "14:00 - 01:30"}</p>
+                          <p className="">{currentLocale === "en" ? "2:00 PM - 01:30 AM" : "14:00 - 01:30"}</p>
 
                           <p className="mt-4">
                             {currentLocale === "en" && "Reservar uma mesa"}
