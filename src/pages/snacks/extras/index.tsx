@@ -24,7 +24,7 @@ const SnacksOptions = () => {
   const menu = localeToTranslationMap[currentLocale || "en"];
 
   return (
-    <div className="min-h-screen bg-black bg-white bg-smoke bg-cover bg-center">
+    <div className="min-h-screen bg-black bg-smoke bg-cover bg-center">
       <Header />
       <div className="p-4">
         <Selection />

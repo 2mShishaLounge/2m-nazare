@@ -12,7 +12,7 @@ import { useRouter } from "next/router";
 
 export const Header = () => {
   return (
-    <div className="fixed bottom-0 left-0 flex w-full justify-between rounded-t-[30px] bg-black bg-white px-6 pb-7 pt-6">
+    <div className="fixed bottom-0 left-0 flex w-full justify-between rounded-t-[30px] bg-black px-6 pb-7 pt-6">
       <div className="mx-24 flex w-full items-center justify-between space-x-3">
         <Link href="/">
           <HomeIcon className="h-6 w-6 text-black text-white" />
@@ -50,7 +50,7 @@ const MenuDropdown = () => {
                         </button>
                       </div>
                     </Transition.Child>
-                    <div className="flex h-full flex-col overflow-y-scroll bg-black bg-white py-6 shadow-xl">
+                    <div className="flex h-full flex-col overflow-y-scroll bg-black py-6 shadow-xl">
                       <div className="flex w-full justify-between px-4 sm:px-6">
                         <div className="flex items-center space-x-3">
                           <Dialog.Title className="text-2xl font-semibold leading-6 text-gray-900 text-slate-200">Nazaré Shisha Lounge</Dialog.Title>

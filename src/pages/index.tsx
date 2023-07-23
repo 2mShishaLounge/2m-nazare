@@ -45,7 +45,7 @@ const Home: NextPage = () => {
         <meta name="description" content="Nazaré Shisha Lounge" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="min-h-screen bg-black bg-white bg-smoke bg-cover bg-center">
+      <main className="min-h-screen bg-black bg-smoke bg-cover bg-center">
         {isLoading ? (
           <LoadingDisplay />
         ) : (
