@@ -5,17 +5,17 @@ export const Selection = () => {
   const { locale: currentLocale } = useRouter();
 
   return (
-    <div className="mt-5 flex w-full justify-between space-x-3 px-5 text-black dark:text-white">
-      <Link href="/shisha" className="rounded bg-slate-200 px-5 py-2 dark:bg-[#1D1D1D]">
+    <div className="mt-5 flex w-full justify-between space-x-3 px-5 text-black text-white">
+      <Link href="/shisha" className="rounded bg-[#1D1D1D] bg-slate-200 px-5 py-2">
         Shisha
       </Link>
-      <Link href="/drinks" className="rounded bg-slate-200 px-5 py-2 dark:bg-[#1D1D1D]">
+      <Link href="/drinks" className="rounded bg-[#1D1D1D] bg-slate-200 px-5 py-2">
         {currentLocale === "en" && <p className="text-center ">Drinks</p>}
         {currentLocale === "pt" && <p className="text-center ">Bebidas</p>}
         {currentLocale === "fr" && <p className="text-center ">Boissons</p>}
         {currentLocale === "es" && <p className="text-center ">Bebidas</p>}
       </Link>
-      <Link href="/snacks" className="rounded bg-slate-200 px-5 py-2 dark:bg-[#1D1D1D]">
+      <Link href="/snacks" className="rounded bg-[#1D1D1D] bg-slate-200 px-5 py-2">
         {currentLocale === "en" && <p className="text-center ">Food</p>}
         {currentLocale === "fr" && <p className="text-center ">Cuisine</p>}
         {currentLocale === "pt" && <p className="text-center ">Comida</p>}
@@ -90,7 +90,7 @@ export const TailwindSlider = () => {
     <div className="mb-40 w-full text-center">
       <Link
         href="/shisha"
-        className="mt-10 inline-block"
+        className="mt-10 inline-block md:mr-10"
         style={{
           minWidth: "300px",
         }}
@@ -115,7 +115,7 @@ export const TailwindSlider = () => {
       {/* Bebidas */}
       <Link
         href="/drinks"
-        className="mt-10 inline-block"
+        className="mt-10 inline-block md:mr-10"
         style={{
           minWidth: "300px",
         }}
@@ -139,7 +139,7 @@ export const TailwindSlider = () => {
       {/* Snacks */}
       <Link
         href="/snacks"
-        className=" mt-10 inline-block"
+        className="mt-10 inline-block"
         style={{
           minWidth: "300px",
         }}

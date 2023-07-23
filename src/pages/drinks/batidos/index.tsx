@@ -24,7 +24,7 @@ const ShakeOptions = () => {
   const menu = localeToTranslationMap[currentLocale || "en"];
 
   return (
-    <div className="min-h-screen bg-white bg-smoke bg-cover bg-center dark:bg-black">
+    <div className="min-h-screen bg-black bg-white bg-smoke bg-cover bg-center">
       <Header />
       <div className="p-4">
         <Selection />
@@ -34,7 +34,7 @@ const ShakeOptions = () => {
           ))}
         </div>
         <div className="mb-24 mt-2 mt-auto w-full">
-          <p className="w-full text-right text-xs tracking-wide text-black dark:text-white">{getDisclaimerByLocale(currentLocale)}</p>
+          <p className="w-full text-right text-xs tracking-wide text-black text-white">{getDisclaimerByLocale(currentLocale)}</p>
         </div>
       </div>
     </div>

@@ -12,10 +12,10 @@ import { useRouter } from "next/router";
 
 export const Header = () => {
   return (
-    <div className="fixed bottom-0 left-0 flex w-full justify-between rounded-t-[30px] bg-white px-6 pb-7 pt-6 dark:bg-black">
+    <div className="fixed bottom-0 left-0 flex w-full justify-between rounded-t-[30px] bg-black bg-white px-6 pb-7 pt-6">
       <div className="mx-24 flex w-full items-center justify-between space-x-3">
         <Link href="/">
-          <HomeIcon className="h-6 w-6 text-black dark:text-white" />
+          <HomeIcon className="h-6 w-6 text-black text-white" />
         </Link>
         <FlagDropdown />
         <MenuDropdown />
@@ -30,7 +30,7 @@ const MenuDropdown = () => {
 
   return (
     <div>
-      <Bars3Icon className="h-6 w-6 text-black dark:text-white" onClick={() => setOpen(true)} />
+      <Bars3Icon className="h-6 w-6 text-black text-white" onClick={() => setOpen(true)} />
       <Transition.Root show={open} as={Fragment}>
         <Dialog as="div" className="relative z-10" onClose={setOpen}>
           <Transition.Child as={Fragment} enter="ease-in-out duration-500" enterFrom="opacity-0" enterTo="opacity-100" leave="ease-in-out duration-500" leaveFrom="opacity-100" leaveTo="opacity-0">
@@ -50,24 +50,24 @@ const MenuDropdown = () => {
                         </button>
                       </div>
                     </Transition.Child>
-                    <div className="flex h-full flex-col overflow-y-scroll bg-white py-6 shadow-xl dark:bg-black">
+                    <div className="flex h-full flex-col overflow-y-scroll bg-black bg-white py-6 shadow-xl">
                       <div className="flex w-full justify-between px-4 sm:px-6">
                         <div className="flex items-center space-x-3">
-                          <Dialog.Title className="text-2xl font-semibold leading-6 text-gray-900 dark:text-slate-200">Nazaré Shisha Lounge</Dialog.Title>
+                          <Dialog.Title className="text-2xl font-semibold leading-6 text-gray-900 text-slate-200">Nazaré Shisha Lounge</Dialog.Title>
                         </div>
                         <button type="button" className="block rounded-md text-black sm:hidden" onClick={() => setOpen(false)}>
                           <span className="sr-only">Close panel</span>
-                          <XMarkIcon className="h-6 w-6 text-black dark:text-white" aria-hidden="true" />
+                          <XMarkIcon className="h-6 w-6 text-black text-white" aria-hidden="true" />
                         </button>
                       </div>
                       <div className="relative mt-6 flex-1 px-4 sm:px-6">
                         {/* Socials */}
                         <div className="flex space-x-4">
-                          <SocialIcon url="https://www.instagram.com/nazare_shisha_lounge/" />
+                          <SocialIcon url="https://www.instagram.com/nazare_shisha_lounge/" target="_blank" />
                         </div>
 
                         {/* Information */}
-                        <div className="my-8 grid grid-cols-1 font-normal text-black/80 dark:text-slate-200">
+                        <div className="my-8 grid grid-cols-1 font-normal text-black/80 text-slate-200">
                           <p className="">Rua Branco Martins , 19 LJ 2, 2450-172 Nazaré</p>
                           <p className="mt-4">
                             {currentLocale === "en" && "Monday to Sunday"}
@@ -76,7 +76,7 @@ const MenuDropdown = () => {
                             {currentLocale === "fr" && "Lundi à Dimanche"}
                           </p>
 
-                          <p className="">{currentLocale === "en" ? "3:00 PM - 01:30 AM" : "15:00 - 01:30"}</p>
+                          <p className="">{currentLocale === "en" ? "4:00 PM - 01:30 AM" : "14:00 - 01:30"}</p>
 
                           <p className="mt-4">
                             {currentLocale === "en" && "Reservar uma mesa"}
@@ -113,7 +113,7 @@ const FlagDropdown = () => {
       <Menu as="div" className="relative inline-block text-left">
         <div>
           {/* Get Current Cookie and based on it set current image to that */}
-          <Menu.Button className="border-slate-2000 rounded-md border p-1 dark:border-slate-800">
+          <Menu.Button className="border-slate-2000 rounded-md border border-slate-800 p-1">
             {currentLocale === "pt" && <PT title="Portugal" className="h-6 w-6 " />}
             {currentLocale === "en" && <US title="United States" className="h-6 w-6 " />}
             {currentLocale === "fr" && <FR title="France" className="h-6 w-6 " />}

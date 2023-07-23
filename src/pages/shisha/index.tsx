@@ -39,7 +39,7 @@ const ShishaOptions = () => {
   const menuPlus = localeToTranslationMapPlus[currentLocale || "en"];
 
   return (
-    <div className="min-h-screen bg-white bg-smoke bg-cover bg-center dark:bg-black">
+    <div className="min-h-screen bg-black bg-white bg-smoke bg-cover bg-center">
       <Header />
       <div className="p-4">
         <Selection />
@@ -49,13 +49,13 @@ const ShishaOptions = () => {
           ))}
         </div>
         <div className="mb-24 grid grid-cols-1 gap-x-3 gap-y-3 md:grid-cols-3">
-          <p className="py-3 text-black dark:text-white">Extras</p>
+          <p className="py-3 text-black text-white">Extras</p>
           {menuPlus?.map((item: MenuItem) => (
             <ItemCard key={item.id} name={item.name} price={item.price} description={item.description} />
           ))}
         </div>
         <div className="mb-24 mt-2 mt-auto w-full">
-          <p className="w-full text-right text-xs tracking-wide text-black dark:text-white">{getDisclaimerByLocale(currentLocale)}</p>
+          <p className="w-full text-right text-xs tracking-wide text-black text-white">{getDisclaimerByLocale(currentLocale)}</p>
         </div>
       </div>
     </div>
