@@ -20,7 +20,7 @@ export const Aperitivos = [
       },
       {
         id: 2,
-        name: "Bailyes",
+        name: "Baileys",
         price: "4,50€",
         descrição: "+1,00€ para adicionar sumo/ +1,50€ para adicionar redbull",
       },

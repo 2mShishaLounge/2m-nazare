@@ -64,7 +64,7 @@ export const Aperitivos = [
       },
       {
         id: 2,
-        name: "Bailyes",
+        name: "Baileys",
         price: "4,50€",
         description: "+1,00€ to add juice \n+1,50€ to add redbull",
       },
@@ -180,7 +180,7 @@ export const Aperitivos = [
       { id: 2, name: "Gordons", price: "7,00€", description: "" },
       { id: 3, name: "Beefeater", price: "7,50€", description: "" },
       { id: 4, name: "Beefeater Pink ", price: "9,00€", description: "" },
-      { id: 5, name: "Bulldog", price: "10,00€", description: "" },
+      { id: 5, name: "Bulldog", price: "7,00€", description: "" },
       { id: 6, name: "Tamqueray Ten", price: " 12,00€", description: "" },
     ],
   },
@@ -195,7 +195,7 @@ export const Licores = [
   },
   {
     id: 2,
-    name: "Bailyes",
+    name: "Baileys",
     price: "4,50€",
     description: "+1,00€ to add juice \n+1,50€ to add redbull",
   },
